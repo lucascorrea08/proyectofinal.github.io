@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV - Proyecto Integrador Final</title>
+    <!--Tipografías de google-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tilt+Warp&display=swap" rel="stylesheet">
+    <!-- Fin tipografías de google-->
+    <!--Open Graph-->
+    <meta property="og:title" content="Curriculum Vitae" />
+    <meta property="og:type" content="Texto expositivo" />
+    <meta property="og:url" content="https://github.com/lucascorrea08/proyectofinal.git" />
+    <meta property="og:image" content="https://randomuser.me/api/portraits/men/75.jpg" />
+    <meta property="og:description" content="Documento que cuenta el ejemplo de un CV" />
+    <!--Iconos-->
+    <script src="https://kit.fontawesome.com/7abde564f4.js" crossorigin="anonymous"></script>
+    <style>
+        body{
+            background-color: rgb(19, 18, 18);
+        }
+        h1{
+            color:rgb(245, 242, 238); font-family: "Papyrus", monospace;
+            font-size: 90px;
+            background-color:rgb(6, 76, 146); border-style: solid; border-color: red;
+            text-align: center 
+        }
+        h2{
+            color:white; font-family: 'Times New Roman', Times, serif; font-size: xx-large;
+            background-color: darkred; border-style: solid; border-color: rgb(32, 2, 112);
+            text-align: center
+        }
+        h3{
+            color: rgb(255, 255, 255); font-family: Tahoma, sans-serif; font-size: x-large;
+            border-style: double; border-color: blue
+        }
+        h4 {   
+            color: rgb(3, 146, 34); font-size: xx-large;
+            text-decoration: underline; text-align: center;
+        }
+        p{
+            color: rgb(202, 152, 24); font-family: Calibri, sans-serif;
+            font-size: larger;
+            text-align: center;
+        }
+        footer
+        p {
+            text-align: right;
+        }
+        i {
+            margin-right: 10px;
+        }
+        .oculto{
+            display:none;
+        }
+        .mostrar{
+            display:block;
+        }
+    </style>
+    
+    <script>
+        function mostrarMas(){
+            // busco el elemento
+            var element = document.getElementById("aocultar");
+            // obtengo la clase y según si esta oculto o no lo muestra
+            var hidden = element.className;
+
+            //si la clase es oculto significa que lo tengo qeu poner visible
+            if(hidden == 'oculto'){
+                element.className = 'mosrtar';
+            }else{
+                // Caso contrario lo oculta
+                element.className = 'oculto';
+            }
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Curriculum Vitae</h1>
+        <h2>Lucas Correa - Abogado (M. N° 2356)</h2>
+        <img src="https://randomuser.me/api/portraits/men/75.jpg" alt="Foto de perfil - Lucas Correa">
+    </header>
+    <!--Sección de navegación-->
+    <nav>
+        <ul>
+            <li><a href="#DatosPersonales">Datos Personales</a></li>
+            <li><a href="#Ubicacion">Ubicación</a></li>
+            <li><a href="#Formacion">Formación</a></li>
+            <li><a href="#ExperienciaLaboral">Experiencia Laboral</a></li>
+            <li><a href="#Objetivo">Objetivo</a></li>
+            <li><a href="#Aptitudes">Aptitudes</a></li>
+            <li><a href="#Otrosdatosdeinteres">Otros datos de interés</a></li>
+            <li><a href="#Contacto">Contacto</a></li>
+        </ul>
+    </nav>
+    <hr>
+    <h3>Soy abogado laboralista con más de 10 años de experiencia en empresa, relación con sindicatos y despidos colectivos. Me adapto a las necesidades de mi cliente, asesorándole tras tener en cuenta las otras partes implicadas.</h3>
+    <hr>
+    <!--Sección de contenido-->
+    <section>
+        <h4 id="DatosPersonales">Datos Personales</h4>
+        <p>
+            <b>Nombre:</b> Lucas<br>
+            <b>Apellido:</b> Correa<br>
+            <b>Género:</b> Masculino<br>
+            <b>Fecha de nacimiento:</b> 31/01/83<br>
+            <b>Edad: </b> 40<br>
+            <b>Estado Civil: </b> Soltero<br>
+        </p>
+
+        <h4 id="Ubicacion">Ubicación</h4>
+        <p>
+            <b>Calle: </b> Los Alamos<br>
+            <b>Número: </b> 134<br>
+            <b>Ciudad: </b> Capital<br>
+            <b>Localidad: </b> Ciudad<br>
+            <b>Código Postal: </b> 5500<br>
+        </p>
+
+        <h4 id="Formacion">Formación</h4>
+        <ul>
+            <li>2009 Licenciatura en Derecho, Universidad de Buenos Aires.</li>
+            <li>2012 Máster en Derecho Laboral.</li>
+        </ul>
+        
+        <h4 id="ExperienciaLaboral">Experiencia Laboral</h4>
+        <ul>
+            <li>Asesoramiento a clientes en Derecho Laboral.</li>
+            <li>Despidos colectivos.</li>
+            <li>Despidos disciplinarios.</li>
+            <li>Negociación con sindicatos.</li>
+            <li>Asistencia a juicios.</li>
+        </ul>
+        <ul id="aocultar" class="oculto">
+            <li>Gestión y liquidación nóminas mensuales.</li>
+            <li>Liquidación y gestión de seguros sociales mensuales.</li>
+            <li>Cálculo y liquidación de finiquitos.</li>
+            <li>Elaboración de contratos.</li>
+            <li>Trámites ante la Administración Pública.</li>
+            <li>Liquidación de impuestos laborales.</li>
+            <li>Asesoramiento en material laboral y fiscal laboral.</li>
+            <li>Asistencia a Abogados de la compañía.</li>
+            <li>Redacción de documentos legales.</li>
+            <li>Registro de documento legales.</li>
+        </ul>
+        <p><a href="javascript:mostrarMas()">Mostrar/ocultar</a>
+
+        <h4 id="Objetivo">Objetivo</h4>
+        <p>Poner en práctica todos los conocimientos adquiridos durante mi formación universitaria y poder formar parte de un equipo de trabajo que me permita desarrollarme personal y profesionalmente.</p>
+
+        <h4 id="Aptitudes">Aptitudes</h4>
+        <ul>
+            <li>Redacción de contratos.</li>
+            <li>Asesoramiento a clientes.</li>
+            <li>Asistencia a juicios</li>
+            <li>Negociación con representantes sindicales.</li>
+            <li>Seriedad, integridad y ética profesional elevada.</li>
+            <li>Trabajo de forma autónoma.</li>
+            <li>Aptitudes interpersonales y de comunicación.</li>
+            <li>Habilidad en gestión de documentos.</li>
+            <li>Orientación a objetivos.</li>
+            <li>Capacidades para la negociación.</li>
+            <li>Capacidad para anticipar riesgos.</li>
+            <li>Establecimiento de estrategias jurídicas.</li>
+        </ul>
+
+        <h4 id="Otrosdatosdeinteres">Otros datos de interés</h4>
+        <ul>
+            <li>Disponibilidad para empezar.</li>
+            <li>Carnet de conducir.</li>
+            <li>Vehículo propio.</li>
+        </ul>
+
+        <h4 id="Contacto">Contacto</h4>
+        <p>
+            <i class="fa-solid fa-phone"></i><b>Teléfono: </b> 4267890<br>
+            <i class="fa-solid fa-envelope"></i><b>Email: </b> <a href="mailto:correa.lucas.0131@gmail.com">correa.lucas.0131@gmail.com<br></a>
+        </p>
+    </section>
+    <hr>
+    <!--Sección de datos de actualización-->
+    <footer>
+        <p>Actualizado 20/03/23</p>
+    </footer>
+
+</body>
+</html>
